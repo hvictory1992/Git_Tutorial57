@@ -8,4 +8,10 @@ public class UserController {
     return "user/login";
   }
 
+  @RequestMapping("user/insert.do")
+  public String insert() {
+    logger.info("경로 : insert")
+
+    return "user/insert";
+  }
 }
